@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: sections
+# Table name: notes
 #
 #  id         :bigint           not null, primary key
 #  title      :string(255)
@@ -10,7 +10,7 @@
 #
 # Indexes
 #
-#  index_sections_on_project_id  (project_id)
+#  index_notes_on_project_id  (project_id)
 #
 # Foreign Keys
 #

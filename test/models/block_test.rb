@@ -1,24 +1,25 @@
 # == Schema Information
 #
-# Table name: sections
+# Table name: blocks
 #
 #  id         :bigint           not null, primary key
-#  title      :string(255)
+#  block_type :integer
+#  text       :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  project_id :bigint           not null
+#  page_id    :bigint           not null
 #
 # Indexes
 #
-#  index_sections_on_project_id  (project_id)
+#  index_blocks_on_page_id  (page_id)
 #
 # Foreign Keys
 #
-#  fk_rails_...  (project_id => projects.id)
+#  fk_rails_...  (page_id => pages.id)
 #
 require "test_helper"
 
-class SectionTest < ActiveSupport::TestCase
+class BlockTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

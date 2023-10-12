@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: sections
+# Table name: notes
 #
 #  id         :bigint           not null, primary key
 #  title      :string(255)
@@ -10,17 +10,16 @@
 #
 # Indexes
 #
-#  index_sections_on_project_id  (project_id)
+#  index_notes_on_project_id  (project_id)
 #
 # Foreign Keys
 #
 #  fk_rails_...  (project_id => projects.id)
 #
+require "test_helper"
 
-one:
-  title: MyString
-  project: one
-
-two:
-  title: MyString
-  project: two
+class NoteTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
+end

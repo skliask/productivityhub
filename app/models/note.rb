@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: sections
+# Table name: notes
 #
 #  id         :bigint           not null, primary key
 #  title      :string(255)
@@ -10,17 +10,13 @@
 #
 # Indexes
 #
-#  index_sections_on_project_id  (project_id)
+#  index_notes_on_project_id  (project_id)
 #
 # Foreign Keys
 #
 #  fk_rails_...  (project_id => projects.id)
 #
-
-one:
-  title: MyString
-  project: one
-
-two:
-  title: MyString
-  project: two
+class Note < ApplicationRecord
+  belongs_to :project
+  has_many :pages, dependent: :destroy
+end
