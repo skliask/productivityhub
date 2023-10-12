@@ -41,5 +41,29 @@ module Types
     def task(id:)
       Task.find(id)
     end
+
+    field :note, Types::NoteType, null: false do
+      argument :id, ID, required: true
+    end
+
+    def note(id:)
+      Note.find(id)
+    end
+
+    field :page, Types::PageType, null: false do
+      argument :id, ID, required: true
+    end
+
+    def page(id:)
+      Page.find(id)
+    end
+
+    field :block, Types::BlockType, null: false do
+      argument :id, ID, required: true
+    end
+
+    def block(id:)
+      Block.find(id)
+    end
   end
 end

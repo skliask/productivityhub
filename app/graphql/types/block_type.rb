@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 module Types
-  class ProjectType < Types::BaseObject
+  class BlockType < Types::BaseObject
     field :id, ID, null: false
-    field :title, String
-    field :description, String
+    field :text, String
+    field :block_type, Integer
+    field :page_id, Integer, null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-    field :sections, [Types::SectionType]
-    field :notes, [Types::NoteType]
   end
 end
