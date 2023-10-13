@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.2].define(version: 2023_10_12_151402) do
   create_table "blocks", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "text"
-    t.integer "block_type"
+    t.integer "block_type", default: 0, null: false
     t.bigint "page_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -53,7 +53,7 @@ ActiveRecord::Schema[7.2].define(version: 2023_10_12_151402) do
 
   create_table "tasks", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
-    t.boolean "completed"
+    t.boolean "completed", default: false, null: false
     t.datetime "due_date"
     t.string "description"
     t.string "text"

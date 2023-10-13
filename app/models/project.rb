@@ -10,7 +10,9 @@
 #
 class Project < ApplicationRecord
   has_many :sections, dependent: :destroy
+  has_many :tasks, through: :sections
   has_many :notes, dependent: :destroy
+  has_many :pages, through: :notes
 
   validates :title, presence: true
   validates :title, uniqueness: true
