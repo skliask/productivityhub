@@ -1,0 +1,528 @@
+# == Schema Information
+#
+# Table name: tasks
+#
+#  id          :bigint           not null, primary key
+#  completed   :boolean          default(FALSE), not null
+#  description :string(255)
+#  due_date    :datetime
+#  text        :string(255)
+#  title       :string(255)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  section_id  :bigint           not null
+#
+# Indexes
+#
+#  index_tasks_on_section_id  (section_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (section_id => sections.id)
+#
+task_1:
+  id: 1
+  title: Earth
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 00:00:00.000000000 Z
+  description: Voluptas dolorum qui. Consequatur sed soluta. Consequuntur consectetur
+    non.
+  text:
+  section_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.468165000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.468165000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.468165000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.468165000 Z
+
+task_2:
+  id: 2
+  title: Mercury
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-01 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-01 00:00:00.000000000 Z
+  description: Tempora facere eos. Sunt voluptatem ut. Laudantium minima autem.
+  text:
+  section_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.470296000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.470296000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.470296000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.470296000 Z
+
+task_3:
+  id: 3
+  title: Mercury
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 00:00:00.000000000 Z
+  description: Vel facilis rerum. Eveniet repellat animi. Itaque fugiat porro.
+  text:
+  section_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.472428000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.472428000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.472428000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.472428000 Z
+
+task_4:
+  id: 4
+  title: Neptune
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-10 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-10 00:00:00.000000000 Z
+  description: Eum rerum adipisci. Laboriosam ipsa adipisci. Eveniet voluptas quos.
+  text:
+  section_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.474534000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.474534000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.474534000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.474534000 Z
+
+task_5:
+  id: 5
+  title: Saturn
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-08 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-08 00:00:00.000000000 Z
+  description: Corporis cumque ad. Earum tempore est. Vero harum aut.
+  text:
+  section_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.478785000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.478785000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.478785000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.478785000 Z
+
+task_6:
+  id: 6
+  title: Venus
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-28 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-28 00:00:00.000000000 Z
+  description: Repellendus ad aut. Ut quaerat soluta. Nisi aperiam odio.
+  text:
+  section_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.481046000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.481046000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.481046000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.481046000 Z
+
+task_7:
+  id: 7
+  title: Neptune
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-24 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-24 00:00:00.000000000 Z
+  description: Consequatur officia beatae. Qui sequi doloribus. Rerum sit neque.
+  text:
+  section_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.483472000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.483472000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.483472000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.483472000 Z
+
+task_8:
+  id: 8
+  title: Uranus
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-13 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-13 00:00:00.000000000 Z
+  description: Non a libero. Id dolorem magni. Consectetur sit voluptatem.
+  text:
+  section_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.485930000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.485930000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.485930000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.485930000 Z
+
+task_9:
+  id: 9
+  title: Mercury
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-05 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-05 00:00:00.000000000 Z
+  description: Doloribus cumque et. Explicabo necessitatibus illo. Non tempore voluptatem.
+  text:
+  section_id: 3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.490151000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.490151000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.490151000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.490151000 Z
+
+task_10:
+  id: 10
+  title: Neptune
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-10 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-10 00:00:00.000000000 Z
+  description: Culpa similique nulla. Aut voluptatem ad. Culpa quisquam labore.
+  text:
+  section_id: 3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.492319000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.492319000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.492319000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.492319000 Z
+
+task_11:
+  id: 11
+  title: Uranus
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-14 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-14 00:00:00.000000000 Z
+  description: Exercitationem perspiciatis necessitatibus. Nostrum magnam rerum. Consectetur
+    similique libero.
+  text:
+  section_id: 3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.494512000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.494512000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.494512000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.494512000 Z
+
+task_12:
+  id: 12
+  title: Mercury
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-20 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-20 00:00:00.000000000 Z
+  description: Ut veritatis nihil. Libero qui modi. Labore animi ex.
+  text:
+  section_id: 3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.502172000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.502172000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.502172000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.502172000 Z
+
+task_13:
+  id: 13
+  title: Venus
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-18 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-18 00:00:00.000000000 Z
+  description: Unde dolore aut. Ut itaque a. Qui reprehenderit molestias.
+  text:
+  section_id: 4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.588307000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.588307000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.588307000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.588307000 Z
+
+task_14:
+  id: 14
+  title: Jupiter
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-26 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-26 00:00:00.000000000 Z
+  description: Excepturi sit quis. Et sit ut. Veritatis quasi recusandae.
+  text:
+  section_id: 4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.590674000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.590674000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.590674000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.590674000 Z
+
+task_15:
+  id: 15
+  title: Mercury
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-20 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-20 00:00:00.000000000 Z
+  description: Consequatur et rerum. Est quae quis. Quae culpa maiores.
+  text:
+  section_id: 4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.592964000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.592964000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.592964000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.592964000 Z
+
+task_16:
+  id: 16
+  title: Uranus
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-03 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-03 00:00:00.000000000 Z
+  description: Dolores sed voluptatem. Enim similique accusamus. Distinctio voluptas
+    nemo.
+  text:
+  section_id: 4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.595117000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.595117000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.595117000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.595117000 Z
+
+task_17:
+  id: 17
+  title: Uranus
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-11-01 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-11-01 00:00:00.000000000 Z
+  description: Amet similique sed. Eligendi aut deleniti. Soluta nisi iusto.
+  text:
+  section_id: 5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.599620000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.599620000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.599620000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.599620000 Z
+
+task_18:
+  id: 18
+  title: Mars
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-30 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-30 00:00:00.000000000 Z
+  description: Provident ratione quia. Ut deleniti officiis. Voluptates eum laborum.
+  text:
+  section_id: 5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.602802000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.602802000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.602802000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.602802000 Z
+
+task_19:
+  id: 19
+  title: Earth
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-19 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-19 00:00:00.000000000 Z
+  description: Tenetur ipsam facere. Inventore amet nihil. Tempora accusantium sed.
+  text:
+  section_id: 5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.605441000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.605441000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.605441000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.605441000 Z
+
+task_20:
+  id: 20
+  title: Earth
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-30 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-30 00:00:00.000000000 Z
+  description: Sequi similique id. Optio enim impedit. Eligendi molestias aut.
+  text:
+  section_id: 5
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.608046000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.608046000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.608046000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.608046000 Z
+
+task_21:
+  id: 21
+  title: Neptune
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-16 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-16 00:00:00.000000000 Z
+  description: Ut ea iure. Rerum id qui. Saepe vel vel.
+  text:
+  section_id: 6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.612923000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.612923000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.612923000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.612923000 Z
+
+task_22:
+  id: 22
+  title: Jupiter
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-24 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-24 00:00:00.000000000 Z
+  description: Cum dolores sed. Facilis optio consequatur. Dolorem odio animi.
+  text:
+  section_id: 6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.615256000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.615256000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.615256000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.615256000 Z
+
+task_23:
+  id: 23
+  title: Mars
+  completed: false
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-28 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-28 00:00:00.000000000 Z
+  description: Necessitatibus occaecati fugit. Est ipsa debitis. Est corporis quod.
+  text:
+  section_id: 6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.617653000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.617653000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.617653000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.617653000 Z
+
+task_24:
+  id: 24
+  title: Saturn
+  completed: true
+  due_date: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-18 00:00:00.000000000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-18 00:00:00.000000000 Z
+  description: Rerum tempora repellat. Velit pariatur veniam. Blanditiis quia consequatur.
+  text:
+  section_id: 6
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.620100000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.620100000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.620100000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.620100000 Z

@@ -3,7 +3,7 @@
 # Table name: tasks
 #
 #  id          :bigint           not null, primary key
-#  completed   :boolean
+#  completed   :boolean          default(FALSE), not null
 #  description :string(255)
 #  due_date    :datetime
 #  text        :string(255)

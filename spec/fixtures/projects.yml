@@ -1,0 +1,37 @@
+# == Schema Information
+#
+# Table name: projects
+#
+#  id          :bigint           not null, primary key
+#  description :text(65535)
+#  title       :string(255)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+project_1:
+  id: 1
+  title: Lagoon Nebula
+  description: Itaque ex omnis. Aut amet voluptatem. Et aliquid repellendus.
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.445379000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.445379000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.445379000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.445379000 Z
+
+project_2:
+  id: 2
+  title: Eagle Nebula
+  description: Animi culpa quam. Illum suscipit ut. Assumenda harum nesciunt.
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.584326000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.584326000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.584326000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.584326000 Z

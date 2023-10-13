@@ -1,6 +1,6 @@
 require 'faker'
 
-5.times do
+2.times do
   project = Project.create(
     title: Faker::Space.unique.nebula,
     description: Faker::Lorem.paragraph
@@ -21,17 +21,17 @@ require 'faker'
     end
   end
 
-  3.times do
+  2.times do
     note = project.notes.create(
       title: Faker::Space.galaxy
     )
 
-    4.times do
+    2.times do
       page = note.pages.create(
         title: Faker::Space.planet
       )
 
-      15.times do
+      5.times do
         page.blocks.create(
           text: Faker::Lorem.sentence,
           block_type: Faker::Number.between(from: 0, to: 3)

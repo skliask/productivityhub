@@ -1,0 +1,101 @@
+# == Schema Information
+#
+# Table name: sections
+#
+#  id         :bigint           not null, primary key
+#  title      :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  project_id :bigint           not null
+#
+# Indexes
+#
+#  index_sections_on_project_id  (project_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (project_id => projects.id)
+#
+section_1:
+  id: 1
+  title: Messier 83
+  project_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.456820000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.456820000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.456820000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.456820000 Z
+
+section_2:
+  id: 2
+  title: Whirlpool
+  project_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.476518000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.476518000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.476518000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.476518000 Z
+
+section_3:
+  id: 3
+  title: Hoags Object
+  project_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.487910000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.487910000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.487910000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.487910000 Z
+
+section_4:
+  id: 4
+  title: Triangulum
+  project_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.585904000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.585904000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.585904000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.585904000 Z
+
+section_5:
+  id: 5
+  title: Messier 83
+  project_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.597164000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.597164000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.597164000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.597164000 Z
+
+section_6:
+  id: 6
+  title: Blackeye
+  project_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.610456000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.610456000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.610456000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.610456000 Z

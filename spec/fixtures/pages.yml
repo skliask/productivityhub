@@ -1,0 +1,129 @@
+# == Schema Information
+#
+# Table name: pages
+#
+#  id         :bigint           not null, primary key
+#  title      :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  note_id    :bigint           not null
+#
+# Indexes
+#
+#  index_pages_on_note_id  (note_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (note_id => notes.id)
+#
+page_1:
+  id: 1
+  title: Mars
+  note_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.519905000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.519905000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.519905000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.519905000 Z
+
+page_2:
+  id: 2
+  title: Venus
+  note_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.540229000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.540229000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.540229000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.540229000 Z
+
+page_3:
+  id: 3
+  title: Venus
+  note_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.555160000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.555160000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.555160000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.555160000 Z
+
+page_4:
+  id: 4
+  title: Neptune
+  note_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.569910000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.569910000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.569910000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.569910000 Z
+
+page_5:
+  id: 5
+  title: Neptune
+  note_id: 3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.624394000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.624394000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.624394000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.624394000 Z
+
+page_6:
+  id: 6
+  title: Neptune
+  note_id: 3
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.637479000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.637479000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.637479000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.637479000 Z
+
+page_7:
+  id: 7
+  title: Saturn
+  note_id: 4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.653358000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.653358000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.653358000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.653358000 Z
+
+page_8:
+  id: 8
+  title: Mars
+  note_id: 4
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.666658000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2023-10-12 20:22:42.666658000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2023-10-12 20:22:42.666658000 Z
+    zone: *1
+    time: 2023-10-12 20:22:42.666658000 Z

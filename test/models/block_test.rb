@@ -3,7 +3,7 @@
 # Table name: blocks
 #
 #  id         :bigint           not null, primary key
-#  block_type :integer
+#  block_type :integer          default("text"), not null
 #  text       :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null

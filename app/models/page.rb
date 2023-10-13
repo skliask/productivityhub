@@ -19,4 +19,6 @@
 class Page < ApplicationRecord
   belongs_to :note
   has_many :blocks, dependent: :destroy
+
+  validates :title, presence: true
 end
